@@ -1,0 +1,27 @@
+script.py
+baumgroesse = 6
+stammlaenge = 2
+
+baumsymbol = "O"
+stammsymbol = "H"
+baummax = 10
+leere = baumgroesse
+stammmax = 3
+stammabstand = baumgroesse / 2
+
+if baumgroesse > baummax:
+  print(f"Baum zu groß! Max. {baummax} Zeichen möglich!")
+elif stammlaenge > stammmax:
+  print(f"Stamm zu lang! Max. {stammmax} Zeichen möglich!")
+else:
+  for b in range (baumgroesse):
+    print (leere * " " + (1+b*2) * baumsymbol)
+    leere -= 1
+  for s in range (stammlaenge):
+    stammabstand = baumgroesse * " "
+    print (stammabstand+stammsymbol)
+  
+  
+  
+  
+  
